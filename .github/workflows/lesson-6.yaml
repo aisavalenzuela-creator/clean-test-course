@@ -28,7 +28,7 @@ jobs:
         run: zip -r deploy.zip build Dockerfile
       - name: '**PLACEHOLDER** Deploy to Elastic Beanstalk.'
         run: echo Placeholder for Deployment
-#  acceptance_test:
+  acceptance_test:
     needs: [deploy]
     runs-on: ubuntu-latest
     container: cypress/included:10.3.0
